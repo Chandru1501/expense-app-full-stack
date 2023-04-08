@@ -15,7 +15,6 @@ app.use(cors());
 app.use('/admin',adminRoutes);
 
 
-
 expenses.sync()
 .then((response)=>{
     app.listen(2000);

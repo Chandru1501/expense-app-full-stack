@@ -1,7 +1,7 @@
 const path = require('path');
 const expenses =require('../model/expenses');
 
-exports.addexpense = (req,res,next)=>{
+exports.addexpense = (req,res,next)=>  {
    const amount = req.body.amount;
    const description = req.body.description;
    const category = req.body.category;
@@ -16,7 +16,7 @@ exports.addexpense = (req,res,next)=>{
    .catch(err => console.log(err));
 }
 
-exports.getallexpenses = (req,res,next)=>{
+exports.getallexpenses = (req,res,next)=> {
    expenses.findAll()
    .then((data)=>{
       res.json(data);
