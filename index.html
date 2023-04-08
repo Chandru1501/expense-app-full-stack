@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>my sample page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h3>ENTER DETAILS</h3>
+        <hr>
+       <div class="align-self-center">
+        <label for="amount">Enter expense amount</label><br>
+        <input type="Number" id="amount" class="form-control mr-2" class="input" name="expenseamount" required>
+    </div>
+    <div class="dropdown1">
+        <label for="descriptioninput">Choose description</label><br>
+        <input id="descriptioninput" class="form-control" name="expenseamount"  required>
+
+        <select id="description" name="description" name="description" class="choose"data-role="select-dropdown" data-profile="minimal">
+           <li><option>Choose</option></li>
+           <option>Movie</option>
+           <option>house rent</option>
+           <option>food</option>
+           <option>Dress</option>
+           <option>electricity</option>
+           <option>fuel</option>
+           
+
+        </select>
+        </div>
+        <div class="dropdown2">
+            <label for="category">Choose category</label><br>
+            <input id="categoryinput" class="form-control" name="category"  required>
+           
+        <select name="category" id="category" class="choose" data-role="select-dropdown" data-profile="minimal" >
+            <option>Choose</option>
+            <option value="movie">movie</option>
+            <option value="house rent">house rent</option>
+            <option value="food">Food</option>
+            <option value="dress">Dress</option>
+            <option value="fuel">Fuel</option>
+            <option value="electricity">electricity</option>
+          </select>
+            </div>
+             <button id="submiting" type="submit" class="btn btn-info" > Add Expense </button>
+
+<ul id="items" class="list-group"></ul>
+
+<h2>Total expenses = Rs.<amount></amount></h2>
+
+    <script src="check_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
